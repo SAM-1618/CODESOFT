@@ -33,7 +33,7 @@ class MovieRecommenderApp(QWidget):
 
        
         try:
-            self.movies_df = dd.read_csv('movie_dataset/movies.csv')  
+            self.movies_df = dd.read_csv('movies.csv')  
         except FileNotFoundError:
             self.show_error_message("Error", "The movie dataset CSV file could not be found.")
             sys.exit()
